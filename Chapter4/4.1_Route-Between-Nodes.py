@@ -6,7 +6,7 @@
 #    By: kcheung <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/30 18:56:31 by kcheung           #+#    #+#              #
-#    Updated: 2017/09/03 22:17:37 by kcheung          ###   ########.fr        #
+#    Updated: 2017/10/31 21:26:22 by kcheung          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,6 @@
 # route between two nodes
 
 # No import libraries
-
 class Vertex:
 	def __init__(self, n):
 		self.name = n
@@ -46,7 +45,6 @@ class Graph:
 			self.add_vertex(Vertex(u))
 			self.add_vertex(Vertex(v))
 			self.add_edge(u,v)
-			
 
 	# DFS
 	def isRoute(self, start, end):

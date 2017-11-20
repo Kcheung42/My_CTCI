@@ -26,3 +26,4 @@ for edge in edges:
 	g.add_edge(edge[:1], edge[1:])
 
 print g.DFS('A', 'Y')
+print g.DFS('A', 'E')

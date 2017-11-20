@@ -6,7 +6,7 @@
 #    By: kcheung <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/03 15:32:31 by kcheung           #+#    #+#              #
-#    Updated: 2017/09/13 11:45:26 by kcheung          ###   ########.fr        #
+#    Updated: 2017/10/05 10:45:29 by kcheung          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,6 @@ class BinaryTree:
 		self.val = val
 		self.left = None
 		self.right = None
-
 	def __str__(self):
 		return "( " + str(self.val) + " ( " + str(self.left) + " | " + str(self.right) + "))" 
 
@@ -63,8 +62,4 @@ count = 0
 for ll in list:
 	count += 1
 	print str(count)  + " : head" + str(ll)
-
-
-
-
 
