@@ -6,7 +6,7 @@
 #    By: kcheung <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/30 15:47:28 by kcheung           #+#    #+#              #
-#    Updated: 2017/09/06 17:41:30 by kcheung          ###   ########.fr        #
+#    Updated: 2017/11/27 21:07:07 by kcheung          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,3 +63,5 @@ newstack.pop(0)
 newstack.push(0,4)
 
 newstack.printstack(0)
+newstack.printstack(1)
+newstack.printstack(2)
