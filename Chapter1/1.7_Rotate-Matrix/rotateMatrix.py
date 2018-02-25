@@ -1,24 +1,25 @@
-def rotate(matrix):
+def rotate(m):
 	"""docstring for rotate"""
-	n = len(matrix)
+	n = len(m)
 	for l in range(n // 2):
 		first = l
 		last = n - l - 1
+		print("first:{} last:{}".format(first, last))
 		for i in range(first, last):
 			offset = i - first
-			top = matrix[first][i]
-			matrix[first][i] = matrix[last-offset][first]
-			matrix[last-offset][first] = matrix[last][last-offset]
-			matrix[last][last-offset] = matrix[i][last]
-			matrix[i][last] = top
+			top = m[first][i]
+			m[first][i] = m[last-offset][first]
+			m[last-offset][first] = m[last][last-offset]
+			m[last][last-offset] = m[i][last]
+			m[i][last] = top
 	return True
 
-def printm(matrix):
-	n = len(matrix)
+def printm(m):
+	n = len(m)
 	for i in range(n):
 		for j in range(n):
-			print "[%.2d]" %matrix[i][j],
-		print "\n"
+			print("[%.2d]" %m[i][j],  end="")
+		print("\n")
 
 if __name__ == "__main__":
 
@@ -29,7 +30,7 @@ if __name__ == "__main__":
 		[13,14,15,16]
 		)
 	n = len(m)
-	print "n:%d" %n
+	print("n:%d" %n)
 	printm(m)
 	print(rotate(m))
 	printm(m)

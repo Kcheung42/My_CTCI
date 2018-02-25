@@ -6,9 +6,7 @@ def is_Unique(string):
 
 	char_set = [False for _ in range(128)]
 	for char in string:
-
-		#ord function returns ascii value of char
-		val = ord(char)
+		val = ord(char) # ord returns ascii value of char
 		# print "this is val %d" % val
 		if char_set[val]:
 			return False

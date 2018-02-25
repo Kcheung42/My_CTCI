@@ -15,6 +15,7 @@ def isPalindrome(ll):
 	if runner:
 		cur = cur.next
 	
+	print(cur.value)
 	while cur:
 		top = stack.pop()
 		if top != cur.value:

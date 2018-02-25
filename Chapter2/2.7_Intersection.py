@@ -10,8 +10,8 @@ def isIntersect(lla, llb):
 	for i in range(diff):
 		longer = longer.next
 
-		while shorter is not longer:
-			shorter = shorter.next
-			longer = longer.next
+	while shorter is not longer:
+		shorter = shorter.next
+		longer = longer.next
 
-		return longer
+	return longer
