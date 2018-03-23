@@ -6,7 +6,7 @@
 #    By: kcheung <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/01 16:30:16 by kcheung           #+#    #+#              #
-#    Updated: 2018/02/19 23:25:42 by kcheung          ###   ########.fr        #
+#    Updated: 2018/03/23 09:49:30 by kcheung          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,9 +27,9 @@ class Vertex:
 
 class Graph:
 	vertices = {}
-	def add_vertex(self, vertex):
-		if isinstance(vertex, Vertex) and vertex.name not in self.vertices:
-			self.vertices[vertex.name] = vertex
+	def add_vertex(self, v):
+		if isinstance(v, Vertex) and v.name not in self.vertices:
+			self.vertices[v.name] = v
 			return True
 		else:
 			return False
